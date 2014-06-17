@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html><head><link rel="stylesheet" type="text/css" href="style.css"><title>planes and stuff</title>
+
+
+</head>
+
+<body>
+<div id="container"> <br>
+<div id="header">
+<h1>cool<span class="off">stuff</span></h1>
+<h2>Yr 9 ICT Web Design</h2>
+</div>
+<div id="menu">
+<ul>
+<li class="menuitem"><a href="Home.html">Home</a></li>
+<li class="menuitem"><a href="#">jet engines</a></li>
+<li class="menuitem"><a href="jet fuel.html">jet fuels</a></li>
+<li class="menuitem"><a href="#">propeller
+engines</a></li>
+<li class="menuitem"><a href="#">propeller
+fuels</a></li>
+<li class="menuitem"><a href="#">petrolium</a></li>
+<li class="menuitem" onclick="myFunction()"><a href="#">rocket engines</a></li>
+<script>
+function myFunction()
+{
+alert("Error Chuck Norris doesn't like this page!");
+}
+</script>
+</ul>
+</div>
+<div id="leftmenu">
+<div id="leftmenu_top"></div>
+<div id="leftmenu_main">
+<h3>engine-jets</h3>
+<ul>
+<li><a href="#" onclick="turbojet()">turbo
+jet</a></li>
+<li><a href="#" onclick="turbofan()">turbo
+fan</a></li>
+<li><a href="#" onclick="turbojetbypass()">turbo
+fan with bypass</a></li>
+<li><a href="#" onclick="turbojetpropeller()">turbo
+jet with propeller</a></li>
+<li><a href="#" onclick="ramjet()">ram jet</a></li>
+<li><a href="#" onclick="scramjet()">scram
+jet</a></li>
+<li><a href="#" onclick="afterburner()">after
+burners</a></li>
+</ul>
+</div>
+<div id="leftmenu_bottom"></div>
+</div>
+<div id="content">
+<p id="demo">click an item on the left menu to see details</p>
+<img id="picturecontent" src="#" height="250"/>
+<div id="SimLink"><li class="menuitem">  <a href="#" id="link" onclick="linkalert()"><B>simulation link</B></a></li>
+</div>
+<script>
+function linkalert()
+{
+alert("make sure you have downloaded the simulator first from Home tab!");
+}
+function turbojet()
+{
+document.getElementById("demo").innerHTML="Turbo jets have turbines that drive the shaft that spins the compressors. As the air is compressed it goes into the combustion chamber to mix with the fuel the force created by the combustion pushes the turbine repeating the process.";
+document.getElementById("picturecontent").src="images/main_turbojet.png";
+}
+function turbofan()
+{
+document.getElementById("demo").innerHTML="Turbo fans are basicly turbo jet with a high power multi bladed fan attached to the shaft pushing the air around it. This one has 2 seperate shafts. The high pressure shaft is for the high pressure turbine and compressor and the low pressure shaft is for the low pressure turbine and compressors and also the fan.";
+document.getElementById("picturecontent").src="images/main_turbofan.png";
+}
+function turbojetbypass()
+{
+document.getElementById("demo").innerHTML="This turbo fan directs air flow though a bypass into the output side of the tubro fan.";
+document.getElementById("picturecontent").src="images/main_turbofanbypass.png";
+}
+function turbojetpropeller()
+{
+document.getElementById("demo").innerHTML="This turbo jet has an propeller attached to a gear box then the gear box is attached to the shaft.";
+document.getElementById("picturecontent").src="images/main_turbofanprop.png";
+}
+function ramjet()
+{
+document.getElementById("demo").innerHTML="Unlike turbo jet ramjets don't have turbines ,shafts or rotaty compressors. To compress the air, it uses the aircrafts speed this is why it is extremly ineffishent at low speeds but at high speeds this engine is great";
+document.getElementById("picturecontent").src="images/main_ramjet.png";
+}
+function scramjet()
+{
+document.getElementById("demo").innerHTML=".This uses the idea of the ram jet with a two large funnels for the compression and the nozzle to create super sonic exhaust.This also realys on the speed of the air craft to deploy";
+document.getElementById("picturecontent").src="images/main_scramjet.png";
+}
+function afterburner()
+{
+document.getElementById("demo").innerHTML="After burners give extra kick to an engine they are only use during take off or at high speed flying. After burners drain lots of fuel so use speringly";
+document.getElementById("picturecontent").src="images/main_afterburner.png";
+document.getElementById("link").href="src/simulations/afterburner/saves/jet engine.cps";
+}
+</script> </div>
+</div>
+</body></html>
